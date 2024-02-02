@@ -22,6 +22,19 @@
 
 \documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
 
+\hypersetup{
+  linkcolor=blue,
+  colorlinks,
+  urlcolor=blue,
+  pdfpagemode=UseNone,
+  pdftitle={Curriculum Vitae - Sylvain Bougerel},
+  pdfauthor={Sylvain Bougerel},
+  pdfcreator={pdflatex}
+  pdfsubject={Curriculum Vitae},
+  pdfkeywords={Cloud Native AWS Python C++ Rust DevOps SRE Continuous Integration Delivery
+    Containers Kubernetes Terraform Linux Leadership Architect}
+}
+
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -30,17 +43,16 @@
 %	TITLE AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.4\textwidth} % 45% of the page width for name
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	{\fontsize{16}{20}{\textbf{\MakeUppercase{Sylvain Bougerel}}}}
-
 	\vspace{6pt}
 	
 	{\Large DevOps \slashsep SRE \slashsep Architect} % Career or current job title
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.22\textwidth} % 27.5% of the page width for the first row of icons
+\begin{minipage}[t]{0.20\textwidth} % 20% of the page width for the first row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
@@ -48,12 +60,10 @@
 	\icon{Phone}{11}{+65 96673473}\\
 
 \end{minipage}
-\begin{minipage}[t]{0.32\textwidth} % 27.5% of the page width for the second row of icons
+\begin{minipage}[t]{0.30\textwidth} % 30% of the page width for the second row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
 	\icon{Envelope}{11}{\href{mailto:sylvain.bougerel@google.com}{sylvain.bougerel@gmail.com}}\\
-	\icon{Github}{11}{\href{https://github.com/sbougerel}{github.com/sbougerel}}\\
-	\icon{Linkedin}{11}{\href{https://sg.linkedin.com/in/sylvain-bougerel-397b221}{sylvain-bougerel}}\\
+	\icon{Github}{11}{\href{https://github.com/sbougerel}{github.com/sbougerel}}\\	\icon{Linkedin}{11}{\href{https://sg.linkedin.com/in/sylvain-bougerel-397b221}{sylvain-bougerel}}\\
 
 \end{minipage}
 
@@ -61,39 +71,39 @@
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+\begin{minipage}[t]{0.45\textwidth} % 40% of the page width for the introduction text
+
   \cvsect{Who Am I?}
-  %\vspace{-\baselineskip} % Required for vertically aligning minipages
   \vspace{-6pt}
 
-  Over a decade of experience building software for other engineers at scale and
-  in mission critical environments. Proponent of automation, trunk-based
-  development, CI/CD, GitOps and IaC. Open-source contributor and
-  maintainer. Manager and mentor to hundreds of engineers.
+  Over a decade of experience building software at scale and in mission critical
+  environments. Proponent of automation, trunk-based development, CI/CD, GitOps
+  and IaC. Open-source contributor and maintainer. Manager and mentor to
+  hundreds of engineers.
 \end{minipage}
 \hfill % Whitespace between
-\begin{minipage}[t]{0.54\textwidth} % align with section above
+\begin{minipage}[t]{0.50\textwidth} % align with section above
+
   \cvsect{Skills}
   \vspace{-6pt}
-  %\vspace{-\baselineskip} % Required for vertically aligning minipages
 
-    \begin{minipage}[t]{0.2\textwidth}
-        \textbf{Languages:}
+    \begin{minipage}[t]{0.3\textwidth}
+	  \textbf{Languages:}
     \end{minipage}
     \hfill
-    \begin{minipage}[t]{0.73\textwidth}
-      Python, C++, C, Rust, Shells, Lisp
+    \begin{minipage}[t]{0.6\textwidth}
+      Python, C, Rust, Shells, Lisp
     \end{minipage}
-    \vspace{4mm}
 
-    \begin{minipage}[t]{0.2\textwidth}
-        \textbf{Technologies:}
+	\vspace{2mm}
+
+    \begin{minipage}[t]{0.3\textwidth}
+	  \textbf{Technologies:}
     \end{minipage}
     \hfill
-    \begin{minipage}[t]{0.73\textwidth}
-      AWS, Docker, Ansible, Terraform, Kubernetes, Linux
+    \begin{minipage}[t]{0.6\textwidth}
+	  AWS, Docker, Ansible, Terraform, Kubernetes, Gitlab, MySQL, Linux
     \end{minipage}
-
 \end{minipage}
 
 %----------------------------------------------------------------------------------------
@@ -104,18 +114,35 @@
 
 \begin{entrylist}
   \entry
-	{3/2020 -- 8/2018}
-	{Principal Software Engineer}
-	{\href{http://www.grab.com}{Grab}}
-	{SOC, Key rotation for Gitlab, For our service infrastructure team, ported the Jenkins upgrade process from Ansible to Packer and Terraform, to reduce.\\
-	  \texttt{node.js}\slashsep\texttt{Vue.js}\slashsep\texttt{Electron}}
-	\entry
-		{2015 -- 2018\\\footnotesize{part time}}
-		{Full stack developer}
-		{Famous Eshop Inc.}
-		{\lorem\lorem\\ \texttt{PHP}\slashsep\texttt{JS}\slashsep\texttt{MariaDB}\slashsep\texttt{Linux}}
-	\entry
-		{2013 -- 2014\\\footnotesize{part time}}
+  {3/2020 -- 8/2023}
+  {Principal Software Engineer}
+  {\href{http://www.grab.com}{Grab}}
+  {
+	SOC, Key rotation for Gitlab, For our service infrastructure team, ported the Jenkins upgrade process from Ansible to Packer and Terraform, to reduce.\\
+	\texttt{node.js}\slashsep\texttt{Vue.js}\slashsep\texttt{Electron}
+  }
+  \entry
+  {3/2017 -- 3/2020}
+  {Software Engineering Lead}
+  {\href{http://www.grab.com}{Grab}}
+  {
+    Conveyor
+    Gitlab\\
+	\texttt{Kotlin}\slashsep\texttt{Spinnaker}\slashsep\texttt{Kubernetes}
+  }
+  \entry
+  {2015 -- 3/2017}
+  {Project Manager}
+  {\href{http://www.thalesgroup.com}{Thales Solution Asia}}
+  {
+	Took over full scope of the software project
+	\href{https://en.wikipedia.org/wiki/North_East_MRT_line}{NEL Upgrade}
+	(\href{https://en.wikipedia.org/wiki/SCADA}{SCADA} interfacing all of its
+	\href{https://en.wikipedia.org/wiki/North_East_MRT_line\#Infrastructure}{infrastructure}). Maintained a good relationship with our customer and increased gross margin YoY by 2\%, from 21.5\% to 23.5\% with \$400k in additional sales, valuing the project at \$21.9M.\\
+	\texttt{C++}\slashsep\texttt{Linux}
+  }
+  \entry
+  {2013 -- 2014\\\footnotesize{part time}}
 		{Junior PHP Developer}
 		{example.com}
 		{\lorem\lorem\\ \texttt{PHP}\slashsep\texttt{Laravel}}
@@ -129,20 +156,20 @@
 
 \begin{entrylist}
 	\entry
-		{2013 -- 2017}
-		{Master's Degree}
-		{Another University Name}
-		{\lorem\lorem\lorem}
+		{2003 -- 2005}
+		{Master of Science in Software Engineering}
+		{\href{https://www.utbm.fr/english/utbm/}{UTBM (France)}}
+		{Subjects covered include operating systems, database design, distributed systems}
 	\entry
-		{2014}
-		{Postgraduate Diploma}
-		{A University Name}
-		{\lorem\lorem}
+		{2004 -- 2005\\\footnotesize{exchange}}
+		{Master of Science in Software Engineering}
+		{\href{https://nus.edu.sg/}{National University of Singapore}}
+		{Studied software design methodologies and game development}
 	\entry
-		{2007 -- 2013}
-		{Bachelor's Degree}
-		{A University Name}
-		{\lorem\lorem}
+		{2000 -- 2002}
+		{Bachelor of Science in Software Engineering}
+		{\href{https://en.wikipedia.org/wiki/Paris-Sud_University}{Paris-Sud University}}
+		{Studied system and network administration}
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
@@ -152,17 +179,18 @@
 \begin{minipage}[t]{0.3\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 
-	\cvsect{Languages}
+	\cvsect{Personal Details}
 	
-	\textbf{English} - native\\
-	\textbf{German} - proficient\\
-	\textbf{Polish} - rudimentary
+	\textbf{Nationality} - French\\
+	\textbf{Visas} - Singapore PR\\
+	\textbf{Fluency} - English, French\\
+
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.3\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
-	\cvsect{Hobbies}
+	\cvsect{Personal Projects}
 	
 	I love... \lorem
 \end{minipage}
