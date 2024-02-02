@@ -26,5 +26,3 @@ $(PDF): $(TEX) $(INCLUDE)
 
 clean:
 	rm -f $(CLEAN)
-
-proper: clean preview

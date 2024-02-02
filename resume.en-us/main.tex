@@ -30,60 +30,71 @@
 %	TITLE AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+\begin{minipage}[t]{0.4\textwidth} % 45% of the page width for name
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	{\fontsize{16}{20}{\textbf{\MakeUppercase{Sylvain Bougerel}}}}
 
 	\vspace{6pt}
 	
-	{\Large DevOps $~$ SRE $~$ Backend} % Career or current job title
+	{\Large DevOps \slashsep SRE \slashsep Architect} % Career or current job title
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+\begin{minipage}[t]{0.22\textwidth} % 27.5% of the page width for the first row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	\icon{MapMarker}{11}{Singapore}\\
 	\icon{Phone}{11}{+65 96673473}\\
-	\icon{At}{11}{\href{mailto:sylvain.bougerel@google.com}{sylvain.bougerel@google.com}}\\
+
 \end{minipage}
-\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+\begin{minipage}[t]{0.32\textwidth} % 27.5% of the page width for the second row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
+	\icon{Envelope}{11}{\href{mailto:sylvain.bougerel@google.com}{sylvain.bougerel@gmail.com}}\\
 	\icon{Github}{11}{\href{https://github.com/sbougerel}{github.com/sbougerel}}\\
-	\icon{Linkedin}{11}{\href{https://twitter.com/@alyxvance}{@alyxvance}}\\
-\end{minipage}
+	\icon{Linkedin}{11}{\href{https://sg.linkedin.com/in/sylvain-bougerel-397b221}{sylvain-bougerel}}\\
 
-\vspace{0.5cm}
+\end{minipage}
 
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
 %----------------------------------------------------------------------------------------
 
-\cvsect{Who Am I?}
-
 \begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-	\lorem \lorem \lorem \lorem \lorem\\ % Dummy text
+  \cvsect{Who Am I?}
+  %\vspace{-\baselineskip} % Required for vertically aligning minipages
+  \vspace{-6pt}
+
+  Over a decade of experience building software for other engineers at scale and
+  in mission critical environments. Proponent of automation, trunk-based
+  development, CI/CD, GitOps and IaC. Open-source contributor and
+  maintainer. Manager and mentor to hundreds of engineers.
 \end{minipage}
 \hfill % Whitespace between
-\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	\begin{barchart}{5.5}
-		\baritem{JavaScript}{60}
-		\baritem{PHP}{100}
-		\baritem{SASS/LESS}{70}
-		\baritem{Bootstrap}{70}
-		\baritem{Git}{40}
-		\baritem{LaTeX}{60}
-	\end{barchart}
-\end{minipage}
+\begin{minipage}[t]{0.54\textwidth} % align with section above
+  \cvsect{Skills}
+  \vspace{-6pt}
+  %\vspace{-\baselineskip} % Required for vertically aligning minipages
 
-\begin{center}
-	\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender}
-\end{center}
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Python, C++, C, Rust, Shells, Lisp
+    \end{minipage}
+    \vspace{4mm}
+
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Technologies:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      AWS, Docker, Ansible, Terraform, Kubernetes, Linux
+    \end{minipage}
+
+\end{minipage}
 
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE
@@ -92,11 +103,12 @@
 \cvsect{Experience}
 
 \begin{entrylist}
-	\entry
-		{2017 -- 3/2018}
-		{Front-end developer}
-		{Big Corporation Name Inc.}
-		{\lorem \lorem \lorem\\ \texttt{node.js}\slashsep\texttt{Vue.js}\slashsep\texttt{Electron}}
+  \entry
+	{3/2020 -- 8/2018}
+	{Principal Software Engineer}
+	{\href{http://www.grab.com}{Grab}}
+	{SOC, Key rotation for Gitlab, For our service infrastructure team, ported the Jenkins upgrade process from Ansible to Packer and Terraform, to reduce.\\
+	  \texttt{node.js}\slashsep\texttt{Vue.js}\slashsep\texttt{Electron}}
 	\entry
 		{2015 -- 2018\\\footnotesize{part time}}
 		{Full stack developer}

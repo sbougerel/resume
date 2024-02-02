@@ -1,5 +1,5 @@
 % cv-us.tex
-% $Id: cv-us.tex,v 1.28 2006/12/12 22:53:52 jrblevin Exp $
+% $Id: cv-us.tex, v0.4 1/02/2024 09:47:18 Sylvain Bougerel $
 %
 % LaTeX Curriculum Vitae Template
 %
@@ -16,14 +16,13 @@
 % Durham, December 12, 2006
 %
 %----------------------------------------------------------------------------%
-% Copyright (C) 2007 Sylvain Bougerel
+% Copyright (C) 2007-2024 Sylvain Bougerel
 %
-% Modification of the template. You are granted the same right as in the
+% Modification for personal use. You are granted the same right as in the
 % original document (see above). Likewise, the name of the orginial author
 % and my name, and both copyrights should be left in the source code.
 %
-% Sylvain Bougerel
-% Singapore, 12th July 2007
+% Sylvain Bougerel <sylvain.bougerel.devel@gmail.com>
 %
 %%---------------------------------------------------------------------------%
 %
@@ -45,11 +44,9 @@
 %
 %%----------------------------------------------------------------------------%
 
-\documentclass[overlapped,line,letterpaper]{res}
+\documentclass[overlapped,line]{res}
 
 \usepackage{ifpdf}
-%% \usepackage{times}
-%% \usepackage{textcomp}
 
 \ifpdf
 \usepackage[pdftex]{hyperref}
@@ -57,27 +54,50 @@
 \usepackage[hypertex]{hyperref}
 \fi
 
+\usepackage{tikz}
+\usepackage{fontawesome}
+
 \hypersetup{
-  letterpaper,
   linkcolor=blue,
   colorlinks,
   urlcolor=blue,
-  pdfpagemode=none,
+  pdfpagemode=UseNone,
   pdftitle={Curriculum Vitae},
   pdfauthor={Sylvain Bougerel},
-  pdfcreator={$ $Id: cv-us.tex, v0.2 6/10/2016 18:35:18 Sylvain Bougerel $ $},
+  pdfcreator={$ $Id: cv-us.tex, v0.4 1/02/2024 09:47:18 Sylvain Bougerel $ $},
   pdfsubject={Curriculum Vitae},
-  pdfkeywords={sylvain bougerel singapore linux unix C++ java C\# distributed
-    computing high-availability large-scale command control quality team leadership
-    agile management gtk valgrind gcc gdb openvz}
+  pdfkeywords={Cloud Native AWS Python C++ Rust DevOps Continuous Integration Delivery
+    Containers Kubernetes Terraform Linux Leadership Architect Design}
 }
+
+%% Thanks: https://tex.stackexchange.com/questions/99316/symbol-for-external-links
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
+        \begin{scope}[x=1ex, y=1ex]
+            \clip(-0.1,-0.1)
+                --++ (-0, 1.2)
+                --++ (0.6, 0)
+                --++ (0, -0.6)
+                --++ (0.6, 0)
+                --++ (0, -1);
+            \path[draw,
+                line width = 0.5,
+                rounded corners=0.5]
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5)
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1)
+            -- (1, 1) -- (1, 0.6);
+          }
+        }
+\newcommand{\hrefa}[2]{\href{#1}{#2\,\ExternalLink}}
 
 %%===========================================================================%%
 
 \begin{document}
 
 %---------------------------------------------------------------------------
-% Document Specific Customizations
 
 % Make lists without bullets and with no indentation
 \setlength{\leftmargini}{0em}
@@ -89,43 +109,114 @@
 %---------------------------------------------------------------------------
 
 \name{Sylvain Bougerel}
-\address{2 Marne Road\\
-  \#02-06 Studios @ Marne\\
-  Singapore 208393
+\address{10 Martaban Road\\
+  \#03-02 Ecoville\\
+  Singapore 328668
 }
 \address{tel: +65 96673473\\
   \href{mailto:sylvain.bougerel@gmail.com}{sylvain.bougerel@gmail.com}\\
-  \href{https://sg.linkedin.com/in/sylvain-bougerel-397b221}{linkedin: sylvain-bougerel-397b221}
+  \href{https://sg.linkedin.com/in/sylvain-bougerel-397b221}{linkedin}\,
+  \href{https://github.com/sbougerel}{github}
 }
 
 \begin{resume}
 
   %---------------------------------------------------------------------------
 
-  \section{\bf General}
-  French nationality. Born on 23rd September 1981.
+  %\section{\bf Background}
 
-  Fluent in French and English, basic conversational German.
+  A decade of experience building software for other engineers at scale and in
+  mission critical environments. Proponent of automation, CI/CD, GitOps and
+  IaC. Open-source contributor and maintainer. Manager and mentor for hundredth
+  of engineers.
 
   %---------------------------------------------------------------------------
 
-  \section{\bf Background}
+  \section{\bf Recent Professional Experience}
 
-  My interest in software still lies very much in the technical aspect of
-  software design and development of large-scale systems. I feel that I
-  have reached the peak of my technical potential in Thales and I am looking for
-  a new opportunity in a dynamic company at the forefront of the software
-  industry. At Thales, I held management positions developing teams and
-  managing projects which have given me an all rounded experience in
-  management covering technical, financial, client and people management.
+  \begin{format}
+    \title{l}\dates{r}\\
+    \employer{l}\location{r}\\
+    \body\\
+  \end{format}
 
-  %% In spite of my management-oriented career in Thales, I am still very much a
-  %% technical person at heart. The reason why I am seeking new horizon today, is
-  %% because I feel that I have reached the peek of my technical potential in
-  %% Thales. I have always been looking for more challenges in my career, and while
-  %% Thales has been offering me more responsibilities in the past few years,
-  %% technically speaking, it fell short. I am now looking for a position in a
-  %% company more driven by technical achievements with a clear vision.
+  \title{\em Principal Software Engineer}
+  \employer{Grab (\hrefa{http://www.grab.com}{grab.com})}
+  \location{Singapore}
+  \dates{Mar 2020--Aug 2023}
+  \begin{position}
+    SOC
+    Key rotation for Gitlab
+    For our service infrastructure team, ported the Jenkins upgrade process from Ansible to Packer and Terraform, to reduce.
+  \end{position}
+
+  \title{\em Software Engineering Lead}
+  \employer{Grab (\hrefa{http://www.grab.com}{grab.com})}
+  \location{Singapore}
+  \dates{Mar 2017--Mar 2020}
+  \begin{position}
+    Conveyor
+    Gitlab
+  \end{position}
+
+  \title{\em Project Manager}
+  \employer{Thales Solution Asia Pte Ltd
+    (\hrefa{http://www.thalesgroup.com}{www.thalesgroup.com})}
+  \location{Singapore}
+  \dates{2015--Feb 2017}
+  \begin{position}
+    Took over full scope of the software project
+    \hrefa{https://en.wikipedia.org/wiki/North_East_MRT_line}{NEL Upgrade} (The
+    \hrefa{https://en.wikipedia.org/wiki/SCADA}{SCADA} interfacing all of its
+    \hrefa{https://en.wikipedia.org/wiki/North_East_MRT_line\#Infrastructure}{infrastructure}).
+    Maintained a positive relationship with our customer that contributed to increase the project's
+    gross margin YoY by 2\%, from 21.5\% to 23.5\% through additional S\$400k
+    in sales, valuing the project to 21.9 millions.
+  \end{position}
+
+  \title{\em Software Manager}
+  \employer{Thales Solution Asia Pte Ltd
+    (\hrefa{http://www.thalesgroup.com}{www.thalesgroup.com})}
+  \location{Singapore}
+  \dates{2011--2015}
+  \begin{position}
+    Headed the scrappy development team since the commencement of NEL upgrade
+    (see above) as a hands-on Manager. Team averaged 6 Software Engineers (11 at
+    peak) half of which I hired. Key contributor to delivering the project's
+    milestones on target (15 days of delay on the project acceptance milestone
+    after nearly 3 years of work). 17 Data centers, 24/7 critical operations, >3
+    million LoC ported from \hrefa{https://en.wikipedia.org/wiki/HP-UX}{HP-UX}
+    to Linux.
+  \end{position}
+
+  \title{\em Senior Software Engineer}
+  \employer{Thales Security Asia Pte Ltd
+    (\hrefa{http://www.thalesgroup.com}{www.thalesgroup.com})}
+  \location{Singapore}
+  \dates{Up to 2011}
+  \begin{position}
+    Worked with cross-continent teams to test and commission
+    \hrefa{https://servicemix.apache.org/}{ServiceMix} interfaces for
+    \hrefa{https://en.wikipedia.org/wiki/Command_and_control}{Command \&
+      Control} centres of
+    the \$450 million project \hrefa{https://www.youtube.com/watch?v=tvD9NkpsNas}{Mexico Ciudad Segura}. Also built the \hrefa{https://en.wikipedia.org/wiki/Automatic_vehicle_location}{AVL} component almost single-handedly, to track ~25000 vehicles pinging every 1-5 minutes. A simple distributed service component backed by PostgreSQL with stored procedures exceeded the requirements.
+  \end{position}
+
+
+  %----------------------------------------------------------------------------
+
+  \section{\bf Recent Certifications}
+
+  \begin{format}
+    \title{l}\dates{r}\\
+    \body\\
+  \end{format}
+
+  \title{\em Certified AWS Solution Architect Associate}
+  \dates{January 2021}
+  \begin{position}
+    \hrefa{https://www.credly.com/badges/287f94f4-3c65-4765-b58e-91ea5781a06f}{Verify my badge here.}
+  \end{position}
 
   %---------------------------------------------------------------------------
 
@@ -148,158 +239,6 @@
   \begin{position}
     University of Paris, South, Science Faculty of Orsay, France
   \end{position}
-
-  %---------------------------------------------------------------------------
-
-  \section{\bf Professional Experience}
-
-  %At Thales Security Asia Pte Ltd, Singapore:
-
-  \begin{format}
-    \title{l}\dates{r}\\
-    \employer{l}\location{r}\\
-    \body\\
-  \end{format}
-
-  \title{\em Project Manager}
-  \employer{Thales Solution Asia Pte Ltd
-    (\href{http://www.thalesgroup.com}{www.thalesgroup.com})}
-  \location{Singapore}
-  \dates{2015--Present}
-  \begin{position}
-    Under my leadership, the project {\em NEL Upgrade} is increasing its gross
-    margin year-on-year by about 2\%, from 21.5\% to 23.5\%. More importantly,
-    the customer has remained confident and satisfied of our team's deliveries,
-    which has brought us an additional S\$400k in sales from 2015 to 2016,
-    growing the overall sales to 21.9 millions.
-  \end{position}
-
-  \title{\em Software Manager}
-  \employer{Thales Solution Asia Pte Ltd
-    (\href{http://www.thalesgroup.com}{www.thalesgroup.com})}
-  \location{Singapore}
-  \dates{2011--2015}
-  \begin{position}
-    Heading the development team of the project {\em NEL upgrade} comprising of
-    up to 11 Software Engineers. The software management position was the
-    largest work package of the project. My leadership contributed directly to
-    the timely delivery of the project's milestones: only 15 days of delay on the
-    project key milestone after nearly 3 years of work.
-  \end{position}
-
-  \title{\em Deputy Technical Manager}
-  \employer{Thales Security Asia Pte Ltd
-    (\href{http://www.thalesgroup.com}{www.thalesgroup.com})}
-  \location{Singapore}
-  \dates{2009--2011}
-  \begin{position}
-    In charge of the design and integration of three core component interfaces
-    for the project {\em Mexico Ciudad Segura}, involving third-party
-    organisations. At the start of my assignment, I was responsible for the
-    development of an AVL tracking component. Additionally, I contributed
-    software design and bug fixes.
-  \end{position}
-
-  \newpage
-  
-  \title{\em Senior Software Developer \& Team Leader}
-  \employer{Thales Information Systems Pte Ltd
-    (\href{http://www.thalesgroup.com}{www.thalesgroup.com})}
-  \location{Singapore}
-  \dates{2007--2009}
-  \begin{position}
-    Involved with porting the {\em Singapore Police Coast Guard} surveillance
-    system from HP--RT to Linux. Subsequently, I led the team of 5 developers to
-    extend the code base of 2 million lines with new features. My
-    personal assignment was to develop an new radar interface; the sales price
-    of 400k for that work yielded a 180k margin as I completed the development 3
-    months ahead of schedule. The project's margin financed my work on the
-    next generation {\em New Coastal Surveillance System}.
-  \end{position}
-
-  %----------------------------------------------------------------------------
-
-
-%%   \section{\bf Technical Skills}
-%%   \em{}C/C++ development\em{}: GCC, GNU Autotools (autoconf, automake, libtool),
-%%   STL, Boost, Lex/Yacc, Gdb, Gprof, Valgrind.
-
-%%   \em{}Java Frameworks\em{}: ServiceMix, ActiveMQ JMS, parts of J2EE (Java WS*,
-%%   JABX, XMLBeans).
-
-%%   \em{}.Net Framework\em{}: Microsoft Visual Studio .Net, C\#, WCF, LinQ and
-%%   Entity Framework, Ant Profiling tools.
-
-%%   \em{}Web technologies\em{}: Python, Php, Perl, Javascript, SOAP, XML, XSD,
-%%   RelaxNG, WSDL, AJAX.
-
-%%   \em{}User interface and toolkit\em{}: Qt3.3, Gtk2 with Glade, OpenGL, SDL,
-%%   X11/Motif, Swing.
-
-%%   \em{}Database and Object Modeling\em{}: UML, SQL, PL/SQL, Oracle SQL (with
-%%   experience in partitioning), PostgreSQL (with experience on Gist trees),
-%%   BerkeleyDB, MySQL, SQLlite.
-
-%%   \em{}Applications\em{}: Linux (Debian, ArchLinux, Redhat, Ubuntu, over 10 year
-%%   of personal use), CVS, SVN, Git, Emacs, Vi(m), Doxygen, Nmap, Tcpdump, Strace,
-%%   CodeSynthesis XSD, Sysprof, Vmware, Visual Studio 9, TFS, SQL Sever
-%%   2008, MS Project, MS Visio (design and code generation).
-
-%%   \em{}Quality and estimation techniques\em{}: continuous integration and unit
-%%   testing using TFS, WBS-based estimation, Function Point Analysis,
-
-  %\section{\bf Presentations}
-  %
-  %``Solving Nonlinear Wave Equations with Mathematica,''
-  %North Carolina State University, April 23, 2003.
-
-  %----------------------------------------------------------------------------
-
-  \section{\bf Professional Training and Certifications}
-
-  \begin{format}
-    \title{l}\dates{r}\\
-    %\location{l}\\
-    \body\\
-  \end{format}
-
-  \title{\em Coached in Scrum Methodologies}
-  \dates{March 2012--Present}
-  %\location{Singapore}
-  \begin{position}
-    With more than 300 hours of ongoing coaching in Scrum methodologies with a
-    certified Agile Consultant, I have acquired solid hand-on experience to lead
-    an Agile development team.
-  \end{position}
-
-%%   \title{\em{Passport for System Engineering} }
-%%   \dates{September 2010}
-%%   %\location{Singapore}
-%%   \begin{position}
-%%     4 days training on System Engineering methodologies applied to the work
-%%     place and provided by Thales Solution Asia Pte Ltd.
-%%   \end{position}
-
-  %% \title{\em{Software Development Effort Estimation} }
-  %% \dates{April 2010}
-  %% %\location{Singapore}
-  %% \begin{position}
-  %%   3 days training on Function Point Analysis, one of the few ISO recognized
-  %%   software metric.
-  %% \end{position}
-
-  %%\newpage
-
-  \title{\em RD236 Red Hat Linux Kernel Internals}
-  \dates{April 2006}
-  %\location{Singapore}
-  \begin{position}
-    Hands-on course designed to provide a detailed examination of the
-    Linux kernel architecture and its modules.
-  \end{position}
-
-  %%===========================================================================%%
-  %% \opening
 
   %------------------------------------------------------------------------------
 
@@ -360,35 +299,20 @@
     {\bf Technologies:} Linux, C++, Lex/Yacc, OpenVZ, Valgrind, Gdb, X11/Motif.
   \end{position}
 
-  %% \title{\em Singapore Civil Defense Force archiving system}
-  %% %\title{SCDF Archiving System}
-  %% %\title{\em Software Developer}
-  %% \dates{September\ 2005--April\ 2006}
-  %% \begin{position}
-  %%   Design and developed over 8 months a C\#/ASP.Net--based archiving system for
-  %%   the Singapore Civil De-fence Force with work-flow management of the
-  %%   document.
-  %% \end{position}
+  % ---------------------------------------------------------------------------
+
+  \section{\bf Personal Information}
+  French national and Singapore Permanent Resident. Born on 23rd September 1981. Fluent in English and French.
 
   %---------------------------------------------------------------------------
 
-  \section{\bf Personal Interests}
+  \section{\bf Personal Projects and fun}
 
-  Passionate about Linux and open-source, working since 2009 on the
+  Emacsen Passionate about Linux and open-source, working since 2009 on the
   open-source Spatial C++ Library, the spiritual child of the library
   libkdtree++, which I maintained for a short period of time.
 
-  An avid badminton player, who enjoys living, traveling and diving around
-  South-East Asia.
-
   %---------------------------------------------------------------------------
-
-  %% \begin{center}
-  %%   \vspace{\fill}\ \newline
-  %%          {\tiny \rm $ $Author: Sylvain Bougerel $ $ }
-  %%          {\tiny \rm $ $Date: 4/8/2016 $ $ }
-  %%          %{\tiny \rm $ $Revision: 0.2 $ $ }
-  %% \end{center}
 
 \end{resume}
 
