@@ -2,3 +2,4 @@
 *.pdf
 *.out
 *.log
+.auctex-auto/
