@@ -31,11 +31,11 @@
   % urlbordercolor=blue,        % color of external links  linkcolor=blue,
   % This stays the same
   pdfpagemode=UseNone,
-  pdftitle={Curriculum Vitae - Sylvain Bougerel},
-  pdfauthor={Sylvain Bougerel},
+  pdftitle={Curriculum Vitae - John Doe},
+  pdfauthor={John Doe},
   pdfcreator={pdflatex}
   pdfsubject={Curriculum Vitae},
-  pdfkeywords={Cloud Native AWS Python C++ Rust DevOps SRE Datadog Continuous Integration Delivery Containers Docker Kubernetes Terraform Linux Leadership Architect Monitoring Observability}
+  pdfkeywords={Python C++ Rust DevOps Docker Kubernetes Terraform Linux}
 }
 
 %----------------------------------------------------------------------------------------
@@ -49,24 +49,24 @@
 \begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
-	{\fontsize{16}{20}{\textbf{\MakeUppercase{Sylvain Bougerel}}}}
+	{\fontsize{16}{20}{\textbf{\MakeUppercase{John Doe}}}}
 	\vspace{6pt}
 	
-	{\Large DevOps \slashsep SRE \slashsep Architect} % Career or current job title
+	{\Large Backend \slashsep SRE} % Career or current job title
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.20\textwidth} % 20% of the page width for the first row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
-	\icon{MapMarker}{11}{Singapore}\\
-	\icon{Phone}{11}{+65 96673473}\\
+	\icon{MapMarker}{11}{United States}\\
+	\icon{Phone}{11}{+1 1111 1111}\\
 
 \end{minipage}
 \begin{minipage}[t]{0.30\textwidth} % 30% of the page width for the second row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	\icon{Envelope}{11}{\href{mailto:sylvain.bougerel@google.com}{sylvain.bougerel@gmail.com}}\\
-	\icon{Github}{11}{\href{https://github.com/sbougerel}{github.com/sbougerel}}\\	\icon{Linkedin}{11}{\href{https://sg.linkedin.com/in/sylvain-bougerel-397b221}{sylvain-bougerel}}\\
+	\icon{Envelope}{11}{\href{mailto:john.doe@google.com}{john.doe@gmail.com}}\\
+	\icon{Github}{11}{\href{https://github.com/sdoe}{github.com/sdoe}}\\	\icon{Linkedin}{11}{\href{https://sg.linkedin.com/in/john-doe}{john-doe}}\\
 
 \end{minipage}
 
@@ -79,9 +79,7 @@
   \cvsect{Background}
   \vspace{-6pt}
 
-  Over a decade of experience building software at scale and in mission critical
-  environments. Proponent of automation, trunk-based development, CI/CD, GitOps
-  and IaC. Manager and mentor to hundreds of engineers.
+  \lorem \lorem
 \end{minipage}
 \hfill % Whitespace between
 \begin{minipage}[t]{0.50\textwidth} % align with section above
@@ -94,7 +92,7 @@
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.6\textwidth}
-      Python, C++, Rust, Shells, Lisp
+      Python, C++, Rust, Shell
     \end{minipage}
 
 	\vspace{2mm}
@@ -104,7 +102,7 @@
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.6\textwidth}
-	  AWS, Docker, Ansible, Terraform, Kubernetes, Gitlab, MySQL, Linux, Datadog, Pagerduty
+	  AWS, Docker, Ansible, Terraform, Kubernetes, MySQL, Linux
     \end{minipage}
 \end{minipage}
 
@@ -116,67 +114,41 @@
 
 \begin{entrylist}
   \entry
-  {3/2020 -- 8/2023\\\footnotesize{promoted}}
-  {Principal Software Engineer}
-  {\href{http://www.grab.com}{Grab}}
-  {
-	Lead engineer for \href{https://www.sarbanes-oxley-101.com/SOX-404.htm}{SOX} compliance of Grab's online business 1.5 year before \href{https://www.grab.com/my/press/others/grab-celebrates-public-listing-milestone/}{NYSE listing} (must-win). Find dependencies, advise methods and corrections for >30 impacted services in 22 financial streams. Audits found 0 material weaknesses; Grab achieved SOX compliance in its first year.
-	\bulletsep{}
-	Port the deployment of the critical Jenkins infrastructure cluster from Ansible to Terraform, making it  \href{https://www.daily-devops.com/devops/immutable/architecture-patterns/why-immutable-infra/}{immutable} to meet its 99.95\% availability goal.
-	\bulletsep{}
-	Member of the \href{https://www.pagerduty.com/resources/learn/what-is-incident-commander/}{Incident Commander} rotation (\textasciitilde17 members), handled 2 of the largest incidents the public never heard about.
-	\\
-	\texttt{Golang}\slashsep\texttt{Python}\slashsep\texttt{Pagerduty}\slashsep\texttt{Datadog}\slashsep\texttt{AWS}
-  }
-  \entry
-  {3/2017 -- 3/2020}
-  {Software Engineering Lead}
-  {\href{http://www.grab.com}{Grab}}
-  {
-    Lead the creation of Conveyor (based on Spinnaker) to manage deployments of our EC2 fleet (>3000 instances); saving >1h per deployments for >1000 of engineers. Highest \href{https://en.wikipedia.org/wiki/Net_promoter_score}{NPS} for engineering tools over 2 years, upon introduction. \href{https://medium.com/grab/in-the-first-part-of-this-blog-post-youve-read-about-the-improvements-made-to-our-build-and-e56c90b56497}{\faMedium\,Blog} and \href{https://www.youtube.com/watch?v=4RNvrg67wns}{\faYoutubePlay\,presentation}.
-	\bulletsep{}
-    Lead \href{https://www.atlassian.com/git/tutorials/source-code-management}{SCM} and CI/CD standardisation, introducing Gitlab to reduce fragmentation (Bitrise, Github, Bitbucket, some homegrown) for >1000 Grab engineers. 2nd highest NPS for engineering tools upon introduction.\\
-	\texttt{Docker}\slashsep\texttt{Kubernetes}\slashsep\texttt{AWS}
-  }
-  \entry
-  {2015 -- 3/2017\\\footnotesize{promoted}}
-  {Project Manager}
-  {\href{http://www.thalesgroup.com}{Thales Solution Asia}}
-  {
-	Take over full scope of the software project
-	\href{https://en.wikipedia.org/wiki/North_East_MRT_line}{NEL Upgrade}
-	(The \href{https://en.wikipedia.org/wiki/SCADA}{SCADA} interfacing all of NEL's
-	\href{https://en.wikipedia.org/wiki/North_East_MRT_line\#Infrastructure}{infrastructure}).
-	Maintain good customer relationships that lead to increased gross margin
-	YoY by 2\% to 23.5\% with \$400k in new sales, valuing the project at \$21.9M.\\
-	\texttt{C++}\slashsep\texttt{Linux}
-  }
-  \entry
-  {2011 -- 2015}
-  {Software Manager}
-  {\href{http://www.thalesgroup.com}{Thales Solution Asia}}
-  {
-	Hands-on manager to a small team at the start of NEL Upgrade
-	(see above). Manage 6 Software Engineers (11 at peak), hire half.
-	Key contributor to meeting the project's milestones on target (just 15
-	days of delay on validation after 3 years of work). 17 Data Centers, 24/7
-	mission critical operations (bugs may
-	\href{https://www.straitstimes.com/singapore/joo-koon-collision-software-glitch-in-signalling-system-results-in-second-train-misjudging}{lead
-	  to injuries}), >3 million LoC ported from
-	\href{https://en.wikipedia.org/wiki/HP-UX}{HP-UX}
-    to Linux.\\
-	\texttt{C++}\slashsep\texttt{Linux}
-  }
-  \entry
-  {Up to 2011\\\footnotesize{prior experiences\\not included}}
+  {Y/2020 -- X/2023\\\footnotesize{promoted}}
   {Senior Software Engineer}
-  {\href{http://www.thalesgroup.com}{Thales Solution Asia}}
+  {\href{http://www.acme.com}{Acme}}
   {
-    Work with cross-continent teams to build
-	\href{https://servicemix.apache.org/}{ServiceMix} interfaces for the
-	\href{https://en.wikipedia.org/wiki/Command_and_control}{Command \& Control}
-	centres of \href{https://www.youtube.com/watch?v=tvD9NkpsNas}{Mexico Ciudad Segura} (\$450 million project). Build a simple distributed \href{https://en.wikipedia.org/wiki/Automatic_vehicle_location}{AVL} component to track ~25000 vehicles pinging every 2-5 minutes, exceeding the requirements.\\
-	\texttt{C\#}\slashsep\texttt{.Net}\slashsep\texttt{MSSQL}
+  \lorem \lorem
+	\bulletsep{}
+  \lorem \lorem
+	\bulletsep{}
+  \lorem \lorem
+	\\
+	\texttt{Rust}\slashsep\texttt{Python}\slashsep\texttt{AWS}
+  }
+  \entry
+  {2017 -- 2020}
+  {Software Engineer}
+  {\href{http://www.acme.com}{Acme}}
+  {
+  \lorem \lorem
+	\bulletsep{}
+  \lorem \lorem
+	\bulletsep{}
+  \lorem \lorem
+	\\
+	\texttt{Docker}\slashsep\texttt{Kubernetes}
+  }
+  \entry
+  {2015 -- 2017}
+  {Junior Software Engineer}
+  {\href{http://www.company.com}{Company}}
+  {
+  \lorem \lorem
+	\bulletsep{}
+  \lorem \lorem
+	\\
+	\texttt{C++}\slashsep\texttt{Linux}
   }
 \end{entrylist}
 
@@ -190,18 +162,13 @@
 	\entry
 		{2003 -- 2005}
 		{Master of Science in Software Engineering}
-		{\href{https://www.utbm.fr/english/utbm/}{UTBM (France)}}
-		{Subjects covered include operating systems, database design, distributed systems}
-	\entry
-		{2004 -- 2005}
-		{(Oversea exchange programme)}
-		{\href{https://nus.edu.sg/}{National University of Singapore}}
-		{Studied software design methodologies and game development}
+		{\href{https://www.university.com}{University}}
+		{\lorem}
 	\entry
 		{2000 -- 2002}
 		{Bachelor of Science in Software Engineering}
-		{\href{https://en.wikipedia.org/wiki/Paris-Sud_University}{Paris-Sud University}}
-		{Studied system and network administration}
+		{\href{https://www.university.com}{University}}
+		{\lorem}
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
@@ -212,9 +179,8 @@
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Personal Details}
 
-	\textbf{Nationality} - French\\
-	\textbf{Visas} - Singapore PR\\
-	\textbf{Fluency} - English, French\\
+	\textbf{Nationality} - US Citizen\\
+	\textbf{Fluency} - English\\
 
 \end{minipage}
 \hfill
@@ -223,7 +189,7 @@
 	
 	\cvsect{Open Source}
 	
-	Emacs \href{https://github.com/sbougerel/autosync-magit}{package} \& \href{https://lists.gnu.org/archive/html/bug-gnu-emacs/2023-11/msg00532.html}{fix}. Wrote \href{https://github.com/sbougerel/spatial}{spatial C++} (\textasciitilde{}4 dl/mth), contributor to \href{https://github.com/nvmd/libkdtree}{libkdtree++} (59 \faStarO). Fun with \href{https://github.com/sbougerel/adventofcode2023}{AdventOfCode} and \href{https://www.codingame.com/start/}{codingames.com} (essay on \href{https://medium.com/@sylvainbougerel/fast-integral-sine-curve-fitting-range-reduction-and-a-little-on-assembly-10b63e82f554}{Fast Integral Sine}).
+  \lorem
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.3\textwidth}
@@ -231,7 +197,8 @@
 	
 	\cvsect{Certifications}
 
-	\href{https://www.credly.com/badges/287f94f4-3c65-4765-b58e-91ea5781a06f}{AWS Solution Architect Associate (2019)}. \href{https://gs-diving.com/padi-courses/advanced-open-water/}{Advanced Open Water Diver (since 2008)}. \href{https://sera.sg/e/cert-first-aid/}{First aid emergency responder (2020)}
+  \lorem
+
 \end{minipage}
 
 %----------------------------------------------------------------------------------------
