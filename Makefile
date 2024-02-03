@@ -17,7 +17,7 @@ $(CV).pdf: $(CV).tex $(CLASS).cls
 	$(PDF_LATEX) $(PDF_LATEX_OPTION) $(CV).tex
 
 preview:
-	$(VIEWER) *.pdf
+	$(VIEWER) $(CV).pdf
 
 clean:
 	rm -f $(CLEAN)
