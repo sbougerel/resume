@@ -36,14 +36,14 @@
 
 \setlength{\parindent}{0mm} % Suppress paragraph indentation
 
-% \usepackage[hidelinks]{hyperref} % Required for links but hide the default boxes around links
-\usepackage[pdftex]{hyperref} % Required for links but hide the default boxes around links
+\usepackage[hidelinks]{hyperref} % Required for links but hide the default boxes around links
 
 \newcommand{\lorem}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.} % Dummy text
 
 \pagestyle{empty} % No headers or footers
 
 \usepackage{moresize} % Provides more font size commands (\HUGE and \ssmall)
+\usepackage[pdftex,x11names]{xcolor} % Moar colors
 
 %----------------------------------------------------------------------------------------
 %	PAGE LAYOUT

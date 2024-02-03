@@ -23,16 +23,19 @@
 \documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
 
 \hypersetup{
-  linkcolor=blue,
+  % Prefer underline?
   colorlinks,
-  urlcolor=blue,
+  urlcolor=Blue3,
+  % Or prefer colors?
+  % pdfborderstyle={/S/U/W 1}, % underline links instead of boxes
+  % urlbordercolor=blue,        % color of external links  linkcolor=blue,
+  % This stays the same
   pdfpagemode=UseNone,
   pdftitle={Curriculum Vitae - Sylvain Bougerel},
   pdfauthor={Sylvain Bougerel},
   pdfcreator={pdflatex}
   pdfsubject={Curriculum Vitae},
-  pdfkeywords={Cloud Native AWS Python C++ Rust DevOps SRE Continuous Integration Delivery
-    Containers Kubernetes Terraform Linux Leadership Architect}
+  pdfkeywords={Cloud Native AWS Python C++ Rust DevOps SRE Datadog Continuous Integration Delivery Containers Docker Kubernetes Terraform Linux Leadership Architect Monitoring Observability}
 }
 
 %----------------------------------------------------------------------------------------
@@ -101,7 +104,7 @@
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.6\textwidth}
-	  AWS, Docker, Ansible, Terraform, Kubernetes, Gitlab, MySQL, Linux
+	  AWS, Docker, Ansible, Terraform, Kubernetes, Gitlab, MySQL, Linux, Datadog, Pagerduty
     \end{minipage}
 \end{minipage}
 
@@ -119,8 +122,11 @@
   {
 	Lead engineer for \href{https://www.sarbanes-oxley-101.com/SOX-404.htm}{SOX} compliance of Grab's online business 1.5 year before \href{https://www.grab.com/my/press/others/grab-celebrates-public-listing-milestone/}{NYSE listing} (must-win). Find dependencies, advise methods and corrections for >30 impacted services in 22 financial streams. Audits found 0 material weaknesses; Grab achieved SOX compliance in its first year.
 	\bulletsep{}
-	Make Jenkins cluster deployment \href{https://www.daily-devops.com/devops/immutable/architecture-patterns/why-immutable-infra/}{immutable} by porting Ansible to Packer and Terraform, to meet the 99.95\% availability goal of the critical infrastructure cluster.\\
-	\texttt{Golang}\slashsep\texttt{Python}\slashsep\texttt{AWS}
+	Port the deployment of the critical Jenkins infrastructure cluster from Ansible to Terraform, making it  \href{https://www.daily-devops.com/devops/immutable/architecture-patterns/why-immutable-infra/}{immutable} to meet its 99.95\% availability goal.
+	\bulletsep{}
+	Member of the \href{https://www.pagerduty.com/resources/learn/what-is-incident-commander/}{Incident Commander} rotation (\textasciitilde17 members), handled 2 of the largest incidents the public never heard about.
+	\\
+	\texttt{Golang}\slashsep\texttt{Python}\slashsep\texttt{Pagerduty}\slashsep\texttt{Datadog}\slashsep\texttt{AWS}
   }
   \entry
   {3/2017 -- 3/2020}
@@ -129,8 +135,8 @@
   {
     Lead the creation of Conveyor (based on Spinnaker) to manage deployments of our EC2 fleet (>3000 instances); saving >1h per deployments for >1000 of engineers. Highest \href{https://en.wikipedia.org/wiki/Net_promoter_score}{NPS} for engineering tools over 2 years, upon introduction. \href{https://medium.com/grab/in-the-first-part-of-this-blog-post-youve-read-about-the-improvements-made-to-our-build-and-e56c90b56497}{\faMedium\,Blog} and \href{https://www.youtube.com/watch?v=4RNvrg67wns}{\faYoutubePlay\,presentation}.
 	\bulletsep{}
-    Lead \href{https://www.atlassian.com/git/tutorials/source-code-management}{SCM} and CI/CD standardisation, introducing Gitlab to reduce fragmentation (Bitrise, Github, Bitbucket, some homegrown) for >1000 of engineers. 2nd highest NPS for engineering tools upon introduction.\\
-	\texttt{Kotlin}\slashsep\texttt{Spinnaker}\slashsep\texttt{Kubernetes}\slashsep\texttt{Terraform}\slashsep\texttt{AWS}
+    Lead \href{https://www.atlassian.com/git/tutorials/source-code-management}{SCM} and CI/CD standardisation, introducing Gitlab to reduce fragmentation (Bitrise, Github, Bitbucket, some homegrown) for >1000 Grab engineers. 2nd highest NPS for engineering tools upon introduction.\\
+	\texttt{Docker}\slashsep\texttt{Kubernetes}\slashsep\texttt{AWS}
   }
   \entry
   {2015 -- 3/2017\\\footnotesize{promoted}}
@@ -150,12 +156,14 @@
   {Software Manager}
   {\href{http://www.thalesgroup.com}{Thales Solution Asia}}
   {
-	Hands-on manager to a small development team at the start of NEL Upgrade
-	(see above). Manage 6 Software Engineers (11 at peak), hire half of the
-	team. Key contributor to delivering the project's milestones on target (15
-	days of delay on the acceptance milestone after 3 years of work). 17 Data
-	centers, 24/7 mission critical operations (bugs may lead to injuries), >3
-	million LoC ported from \href{https://en.wikipedia.org/wiki/HP-UX}{HP-UX}
+	Hands-on manager to a small team at the start of NEL Upgrade
+	(see above). Manage 6 Software Engineers (11 at peak), hire half.
+	Key contributor to meeting the project's milestones on target (just 15
+	days of delay on validation after 3 years of work). 17 Data Centers, 24/7
+	mission critical operations (bugs may
+	\href{https://www.straitstimes.com/singapore/joo-koon-collision-software-glitch-in-signalling-system-results-in-second-train-misjudging}{lead
+	  to injuries}), >3 million LoC ported from
+	\href{https://en.wikipedia.org/wiki/HP-UX}{HP-UX}
     to Linux.\\
 	\texttt{C++}\slashsep\texttt{Linux}
   }
