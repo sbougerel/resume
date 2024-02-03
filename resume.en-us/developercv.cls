@@ -146,3 +146,5 @@
 
 % Command to output a separator slash between lists, e.g. '  /  '
 \newcommand{\slashsep}{\hspace{3mm}/\hspace{3mm}}
+% Command to output a bullet separator in text
+\newcommand{\bulletsep}{\hspace{3mm}\textbullet\hspace{3mm}}
