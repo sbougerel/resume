@@ -1,7 +1,7 @@
-In this repository, you'll find...
+## Developer CV Template
+My personal favorite template.
 
-# My English resume
-It's based on the excellent (in my opinion) [res latex documentclass written by Michael DeCorte](https://www.rpi.edu/dept/arc/training/latex/resumes/)
-
-# License
-Free to do whatever you want with the content in there, except for copyrighted work from others. It's provided without any warranty.
+Based on a template by Omar Roldan,
+which is based on a template by Jan Vorisek (jan@vorisek.me),
+which is based on a template by Jan Küster (info@jankuester.com),
+which is modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com).
