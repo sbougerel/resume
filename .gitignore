@@ -1,5 +1,5 @@
-*.aux
-*.pdf
-*.out
-*.log
+main.aux
+main.pdf
+main.out
+main.log
 .auctex-auto/

@@ -7,10 +7,10 @@ VIEWER=evince
 LATEX_OPTION=
 PDF_LATEX_OPTION=
 
-CLEAN=*.log *.pdf *.aux *.out
-
 CV=main
 CLASS=developercv
+CLEAN=$(CV).log $(CV).pdf $(CV).aux $(CV).out
+
 
 # Target
 $(CV).pdf: $(CV).tex $(CLASS).cls
