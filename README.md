@@ -15,9 +15,9 @@ Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) similar
 - Generates multiple outputs at one go
 
 ### Usage
-Update the tools set in `Makefile` then:
+Update the variables in `Makefile` and run:
 
-   make
+    make
 
 Edit the contents in `src/variables.tex` and in the files under `sections`.
 
@@ -33,7 +33,7 @@ Edit the contents in `src/variables.tex` and in the files under `sections`.
 
 ### Example
 
-First layout             | Second layout
+First example             | Second example
 :-------------------------:|:-------------------------:
 ![First layout](images/sc2.png)  |  ![Second layout](images/sc1.png)
 
