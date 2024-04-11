@@ -1,8 +1,6 @@
 ## ATS-Friendly CV
 
-Inspired by [Rover Resume from Subidit](https://github.com/subidit/rover-resume).
-
-Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) similar to the work of the original author.
+Inspired and based on the [Rover Resume from Subidit](https://github.com/subidit/rover-resume).
 
 ### Features
 
@@ -37,3 +35,5 @@ First example             | Second example
 :-------------------------:|:-------------------------:
 ![First layout](images/sc2.png)  |  ![Second layout](images/sc1.png)
 
+### License
+ATS-Friendly CV © 2024 by Sylvain Bougerel is licensed under CC BY 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
