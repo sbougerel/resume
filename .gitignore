@@ -1,0 +1,6 @@
+*.aux
+*.pdf
+*.out
+*.log
+.auctex-auto/
+out/

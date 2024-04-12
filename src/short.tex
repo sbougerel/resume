@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+
+\hyphenpenalty=10000 % Disable hyphenation, which may produce soft hyphens
+\usepackage[T1]{fontenc} % Help with pdftotext output formatting (for ATS)
+
+\usepackage[top=1.4cm, bottom=1.3cm, left=1.8cm, right=1.8cm, a4paper]{geometry}
+\pagestyle{empty} % remove page number
+\setcounter{secnumdepth}{0} % remove section numbering
+
+\usepackage{enumitem} % formatting list style
+\setlist{noitemsep,nosep}
+\setlist[itemize]{left=0pt..1.5em}
+\setlist[enumerate]{align=left}
+
+\usepackage{titlesec}
+\titlespacing{\section}{0em}{*3}{*1.5}
+\titlespacing{\subsection}{0em}{*1.5}{*0}
+\titlespacing{\subsubsection}{0em}{*0.5}{*0}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries}{}{}{}
+\titleformat{\subsubsection}{\bfseries\slshape}{}{}{}
+
+\usepackage{microtype} % With hyphenation disabled, provide better spacing
+
+\input{variables}
+
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks,
+  pdfpagemode=UseNone,
+  pdftitle={CV of \cvname},
+  pdfauthor={\cvname},
+  pdfsubject={Curriculum Vitae},
+  pdfkeywords={\cvkeywords}
+}
+
+% ------------------------------------------ %
+% Commands for cvInterface
+
+\newcommand{\cvItem}[1]{\item{#1}}
+\newcommand{\cvItemList}[1]{
+  \begin{itemize}
+    #1
+  \end{itemize}
+}
+\newcommand{\cvEntry}[6]{% company, location, title, date range, short word, content
+  \subsection{#1, #2}
+  \subsubsection{#3\texorpdfstring{\hfill}{ }#4}
+  #6
+}
+\newcommand{\cvShortEntry}[4]{% title, date range, short word, content
+  \subsection{#1\texorpdfstring{\hfill}{ }#2}
+  #4
+}
+
+% Toggles
+\cvshorttrue%
+
+% ------------------------------------------ %
+\begin{document}
+
+\begin{center}
+  \begin{minipage}{0.5\textwidth}
+    {\Huge\bfseries \cvname}\vspace{1ex} \\
+    {\large \cvjobtitle}
+  \end{minipage} \hfill
+  \begin{minipage}{0.42\textwidth}
+    \input{sections/personal-info}
+  \end{minipage}
+\end{center}
+
+\section{Experience}
+\input{sections/experience}
+
+\section{Projects}
+\input{sections/projects}
+
+\section{Education}
+\input{sections/education}
+
+\section{Skills}
+\input{sections/skills}
+
+\end{document}%
