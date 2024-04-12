@@ -13,14 +13,16 @@ Inspired and based on the [Rover Resume from Subidit](https://github.com/subidit
 - Generates multiple outputs at one go
 
 ### Usage
-Update the variables in `Makefile` and run:
+Build your resume:
 
     make
 
+You might need to update the variables in `Makefile` or update your LaTeX environment.
+
+### Personalisation
 Edit the contents in `src/variables.tex` and in the files under `sections`.
 
 ### Recommendations for ATS-friendliness
-
 - Avoid links besides email, LinkedIn, Github, or put them in the last section only. Links can affect parsing.
 - Keep to single-line items in bullet lists; some items can be two lines, never more.
 - Avoid hyphens in words as they maybe converted to soft hyphen if that appear at the end of a line. Disabled hyphenation to mitigate the issue.
