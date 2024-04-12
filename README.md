@@ -1,6 +1,12 @@
 ## ATS-Friendly CV
 
+<<<<<<< HEAD
 Inspired and based on the [Rover Resume from Subidit](https://github.com/subidit/rover-resume).
+=======
+Inspired by [Rover Resume from Subidit](https://github.com/subidit/rover-resume).
+
+Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) similar to the work of the original author.
+>>>>>>> 21de192 (init: new ATS-friendly template)
 
 ### Features
 
@@ -13,6 +19,7 @@ Inspired and based on the [Rover Resume from Subidit](https://github.com/subidit
 - Generates multiple outputs at one go
 
 ### Usage
+<<<<<<< HEAD
 Build your resume:
 
     make
@@ -23,6 +30,16 @@ You might need to update the variables in `Makefile` or update your LaTeX enviro
 Edit the contents in `src/variables.tex` and in the files under `sections`.
 
 ### Recommendations for ATS-friendliness
+=======
+Update the tools set in `Makefile` then:
+
+   make
+
+Edit the contents in `src/variables.tex` and in the files under `sections`.
+
+### Recommendations for ATS-friendliness
+
+>>>>>>> 21de192 (init: new ATS-friendly template)
 - Avoid links besides email, LinkedIn, Github, or put them in the last section only. Links can affect parsing.
 - Keep to single-line items in bullet lists; some items can be two lines, never more.
 - Avoid hyphens in words as they maybe converted to soft hyphen if that appear at the end of a line. Disabled hyphenation to mitigate the issue.
